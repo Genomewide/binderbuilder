@@ -1,0 +1,27 @@
+{
+  "name": "baseui",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "test:e2e": "turbo test:e2e",
+    "check": "turbo lint typecheck test build",
+    "clean": "turbo clean",
+    "gen:feature": "tsx scripts/gen-feature.ts",
+    "gen:route": "tsx scripts/gen-route.ts",
+    "gen:entity": "tsx scripts/gen-entity.ts",
+    "gen:store": "tsx scripts/gen-store.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  }
+}
